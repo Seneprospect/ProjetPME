@@ -151,8 +151,8 @@ with st.sidebar:
             if colonnes_dispos:
                 st.markdown("**Mapping des colonnes**")
 
-                auto_date = _trouver_colonne(df_apercu, ALIASES_DATE)
-                auto_montant = _trouver_colonne(df_apercu, ALIASES_MONTANT)
+                auto_date = trouver_colonne(df_apercu, ALIASES_DATE)
+                auto_montant = trouver_colonne(df_apercu, ALIASES_MONTANT)
 
                 idx_date = colonnes_dispos.index(auto_date) if auto_date in colonnes_dispos else 0
                 idx_montant = (
